@@ -16,30 +16,49 @@
                <img src="./images/marketplace-logo (1).png" alt="Chodewhelle logo">
                <span class="text-cw-blue-400 font-bold font-work-sans text-2xl ">CodeWheel</span>
             </a>
-            <ul class="flex">
-                <li class="mr-10"><a href="#" class="hover:text-cw-blue-600 hover:underline">Home</a></li>
-                <li class="mr-10"><a href="#" class="hover:text-cw-blue-600 hover:underline">Travel</a></li>
-                <li class="mr-10"><a href="#" class="hover:text-cw-blue-600 hover:underline">Music</a></li>
-                <li class="mr-10"><a href="#" class="hover:text-cw-blue-600 hover:underline">Technology</a></li>
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="#" class="hover:text-cw-blue-600 hover:underline">Home</a></li>
+                <li><a href="#" class="hover:text-cw-blue-600 hover:underline">Travel</a></li>
+                <li><a href="#" class="hover:text-cw-blue-600 hover:underline">Music</a></li>
+                <li><a href="#" class="hover:text-cw-blue-600 hover:underline">Technology</a></li>
                 <li><a href="#" class="hover:text-cw-blue-600 hover:underline">Business</a></li>
             </ul>
+            <div class="block md:hidden">
+                <button class="menuBtn-js hover:text-cw-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+                <button class="hidden closeBtn-js hover:text-cw-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
        </div>
    </header> 
+   <div class="md:hidden">
+       <nav class="hidden navMenu-js container mx-auto max-w-6xl px-5">
+           <ul>
+               <li><a href="#" class="text-cw-blue-300 hover:text-cw-gray-050 hover:bg-cw-blue-600 block p-3">Home</a></li>
+               <li><a href="#" class="text-cw-blue-300 hover:text-cw-gray-050 hover:bg-cw-blue-600 block p-3">Travel</a></li>
+               <li><a href="#" class="text-cw-blue-300 hover:text-cw-gray-050 hover:bg-cw-blue-600 block p-3">Music</a></li>
+               <li><a href="#" class="text-cw-blue-300 hover:text-cw-gray-050 hover:bg-cw-blue-600 block p-3">Technology</a></li>
+               <li><a href="#" class="text-cw-blue-300 hover:text-cw-gray-050 hover:bg-cw-blue-600 block p-3">Business</a></li>
+           </ul>
+       </nav>
+   </div>
    <main class="container mx-auto max-w-6xl px-5">
-       <article class="border-t border-cw-gray-100 flex justify-between py-10">
-           <a href="#">
-               <img src="./images/backpack.jpg" alt="Backpacker outside by sea" class="border-sm w-auto h-96">
+       <article class="border-t border-cw-gray-100 flex justify-between py-10 flex-col md:flex-row">
+           <a href="#" class="md:w-1/2 md:mr-12 bg-cw-blue-600">
+               <img src="./images/backpack.jpg" alt="Backpacker outside by sea" class="border-sm w-full h-96">
            </a>
-           <div class="w-1/2 mt-4 ml-10">
+           <div class="md:w-1/2 mt-4 ml-10">
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block">Travel</a>
                 <h1 class="mb-3"><a href="#" class="font-bold font-work-sans text-3xl text-cw-gray-900 leading-tight hover:text-cw-blue-600 hover:underline">Backbacking planning tips for the summer</a></h1>
                 <p class="leading-relaxed">From our uber-compact Nano Daypack to our award-winning Duffle Bag, our packs and bags will haul your gear to where the action is</p>
            </div>
        </article>
-       <div class="mt-4 grid grid-cols-3 gap-8 row-gap-6 pb-10">
+       <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 row-gap-6 pb-10">
             <article>
-                <a href="#">
-                    <img src="./images/Woman_Team_Collaboration_Whiteboard_Business_kaptivo.jpg" class="mb-2 w-90 h-72" alt="Whiteboard meeeting">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/Woman_Team_Collaboration_Whiteboard_Business_kaptivo.jpg" class="mb-2 w-90 h-72 hover:bg-cw-blue-600 hover:opacity-75 ease-in duration-100" alt="Whiteboard meeeting">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Business</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Ten tips for productive meetings</a></h2>
@@ -49,8 +68,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/walk-spring-2019-solo-walking-960.jpg" class="mb-2 w-90 h-72" alt="wolking">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/walk-spring-2019-solo-walking-960.jpg" class="mb-2 w-90 h-72 hover:opacity-75 ease-in duration-100" alt="wolking">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Travel</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Our favorite wolking locations</a></h2>
@@ -60,8 +79,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/homeoffice.jpg" class="mb-2 w-90 h-72" alt="homeoffice">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/homeoffice.jpg" class="mb-2 w-90 h-72 hover:opacity-75 ease-in duration-100" alt="homeoffice">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Business</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Our trip on the perfect home office</a></h2>
@@ -71,8 +90,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/AndroidPIT-Best-High-End-Smartphones-Hero-1-scaled.jpg" class="mb-2 w-90 h-72" alt="phone lounching">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/AndroidPIT-Best-High-End-Smartphones-Hero-1-scaled.jpg" class="mb-2 w-90 h-72 hover:opacity-75 ease-in duration-100" alt="phone lounching">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Technology</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Ten tips for productive meetings</a></h2>
@@ -82,8 +101,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/small_young-370385_1280.jpg" class="mb-2 w-90 h-72" alt="living in another city">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/small_young-370385_1280.jpg" class="mb-2 w-full h-72 hover:opacity-75 ease-in duration-100" alt="living in another city">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Travel</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Adjusting to leaving in new city</a></h2>
@@ -93,8 +112,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/podcast-hero-2400x1600.jpg" class="mb-2 w-90 h-72" alt="podcast">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/podcast-hero-2400x1600.jpg" class="mb-2 w-90 h-72 hover:opacity-75 ease-in duration-100" alt="podcast">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Technology</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Setting up your first podcast</a></h2>
@@ -104,8 +123,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/music-recovery-image.png" class="mb-2 w-90 h-72" alt="music">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/music-recovery-image.png" class="mb-2 w-90 h-72 hover:opacity-75 ease-in duration-100" alt="music">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Music</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Living your moments</a></h2>
@@ -115,8 +134,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/concert-hands.jpg" class="mb-2 w-90 h-72" alt="concert">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/concert-hands.jpg" class="mb-2 w-90 h-72 hover:opacity-75 ease-in duration-100" alt="concert">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Music</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">The emotional effects of sound and lights</a></h2>
@@ -126,8 +145,8 @@
                 </p>
             </article>
             <article>
-                <a href="#">
-                    <img src="./images/small_young-370385_1280.jpg" class="mb-2 w-90 h-72" alt="living in another city">
+                <a href="#" class="block hover:bg-cw-blue-600">
+                    <img src="./images/small_young-370385_1280.jpg" class="mb-2 w-full h-72 hover:opacity-75 ease-in duration-100" alt="living in another city">
                 </a>
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block ml-10">Travel</a>
                 <h2><a href="#" class="font-bold font-work-sans text-xl text-cw-gray-900 hover:text-cw-blue-600 hover:underline">Adjusting to leaving in new city</a></h2>
@@ -137,10 +156,10 @@
                 </p>
             </article>
        </div>
-       <section class="flex justify-between">
-            <div class="w-1/2 mr-10">
-                <a href="#" class="mb-2 block">
-                    <img src="./images/digitaluniversity.png" class="rounded-sm  w-90 h-72" alt="Person making notes by a laptop">
+       <section class="flex flex-col md:flex-row justify-between pb-10 border-t border-cw-gray-100 pt-10 md:border-none md:pt-0">
+            <div class="md:w-1/2 md:mr-10 mb-6 md:mb-0">
+                <a href="#" class="mb-2 block hover:bg-cw-blue-600">
+                    <img src="./images/digitaluniversity.png" class="rounded-sm  w-full h-72 hover:opacity-75 ease-in duration-100" alt="Person making notes by a laptop">
                 </a>
                 <h3 class="mb-1">
                     <a href="#" class="text-xl font-bold text-cw-gray-800 font-work-sans leading-tight hover:text-cw-blue-600 hover:underline">Join our online digital university</a>
@@ -149,9 +168,9 @@
                      research, incubation and extension work in Digital Technologies and its application domains in Science
                 </p>
             </div>
-            <div class="w-1/2">
-                <a href="#" class="mb-2 block">
-                    <img src="./images/lenovo-thinkpad-laptop-window-focus.png" class="rounded-sm  w-90 h-72" alt="focus on laptop">
+            <div class="md:w-1/2">
+                <a href="#" class="mb-2 block hover:bg-cw-blue-600 box-border">
+                    <img src="./images/lenovo-thinkpad-laptop-window-focus.png" class="rounded-sm  w-full h-72 hover:opacity-75 ease-in duration-100" alt="focus on laptop">
                 </a>
                 <h3 class="mb-1">
                     <a href="#" class="text-xl font-bold text-cw-gray-800 font-work-sans leading-tight hover:text-cw-blue-600 hover:underline">Join our online digital university</a>
@@ -165,15 +184,15 @@
    </main>
    <footer>
        <div class="bg-cw-gray-050 py-10 mb-10">
-            <div class="container mx-auto max-w-6xl px-5 flex justify-between">
-                <div class="w-1/2">
+            <div class="container mx-auto max-w-6xl px-5 flex flex-col md:flex-row justify-between">
+                <div class="md:w-1/2">
                     <h3 class="text-2xl font-bold font-work-sans text-cw-gray-900 mb-3">Sign Up to stay up to date on all pur courses</h3>
                     <p class="text-lg w-11/12">
                         Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length:
                          a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. 
                     </p>
                 </div>
-                <form action="#" class="flex align-center self-center">
+                <form action="#" class="md:flex md:align-center self-center py-3 md:py-0">
                     <label for="email" class="sr-only">Enter your email</label>
                     <input class="placeholder-cw-gray-700 h-12 px-2 w-64" type="email" name="email" id="email" placeholder="Enter your email" />
                     <button type="submit" class="bg-cw-blue-400 hover:bg-cw-blue-600 w-10 h-12">
@@ -182,30 +201,46 @@
                 </form>
             </div>
        </div>
-       <div class="container mx-auto max-w-6xl px-5 flex justify-between mb-10">
-            <ul class="flex">
-                <li class="mr-10"><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline">&copy;Codewheel</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline">Home</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline">Travel</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline">Music</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline">Technology</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline">Business</a></li>
+       <div class="container mx-auto max-w-6xl px-5 flex flex-col md:flex-row justify-between mb-10">
+            <ul class="flex flex-col md:flex-row space-x-10">
+                <li><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">&copy;Codewheel</a></li>
+                <li><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Home</a></li>
+                <li><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Travel</a></li>
+                <li><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Music</a></li>
+                <li><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Technology</a></li>
+                <li><a href="#" class="text-cw-gray-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Business</a></li>
             </ul>
-            <ul class="flex">
-                <li class="mr-10">
+            <ul class="flex pt-3">
+                <li class="mr-8">
                     <a href="#"><img src="./images/linkedin.png" alt=""></a>
                 </li>
-                <li class="mr-10">
+                <li class="mr-8">
                     <a href="#"><img src="./images/facebook.png" alt=""></a>
                 </li>
-                <li class="mr-10">
+                <li class="mr-8">
                     <a href="#"><img src="./images/twitter.png" alt=""></a>
                 </li>
-                <li class="mr-10">
+                <li class="mr-8">
                     <a href="#"><img src="./images/instagram.png" alt=""></a>
                 </li>
             </ul>
         </div>
    </footer>
+   <script>
+       const navMenu = document.querySelector('.navMenu-js');
+       
+       const menuBtn = document.querySelector('.menuBtn-js');
+
+       const closeBtn = document.querySelector('.closeBtn-js');
+
+       function toggleDropDown() {
+           navMenu.classList.toggle('hidden');
+           menuBtn.classList.toggle('hidden');
+           closeBtn.classList.toggle('hidden');
+       }
+
+       menuBtn.addEventListener('click', toggleDropDown);
+       closeBtn.addEventListener('click',toggleDropDown);
+   </script>
 </body>
 </html>
